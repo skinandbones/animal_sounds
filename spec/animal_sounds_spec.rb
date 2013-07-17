@@ -13,4 +13,8 @@ describe AnimalSounds do
   it 'should retrieve moo for the symbol :cow' do
     AnimalSounds.animal_sound(:cow).should == 'moo'
   end
+
+  it 'should use the correct rooster sound' do
+    AnimalSounds.animal_sound(:rooster).should == 'caaawwww'
+  end
 end
